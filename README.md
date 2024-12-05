@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# README: Role-Based Access Control (RBAC) UI Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Overview
+This project implements a Role-Based Access Control (RBAC) User Interface, designed to manage users, roles, and permissions securely and efficiently. It serves as an admin dashboard that provides a seamless, user-friendly experience for administrators tasked with managing access control.
 
-## Available Scripts
+# Features
+1. User Management
+View all registered users in a clean and organized list.
+Add new users with roles and customizable permissions.
+Edit user information, including role assignment and status (Active/Inactive).
+Delete users securely with confirmation dialogs.
+2. Role Management
+Create new roles with a descriptive name.
+Edit roles to update their associated permissions using checkboxes.
+Delete roles that are no longer required.
+Display roles and their assigned permissions for easy reference.
+3. Dynamic Permissions
+Assign or modify permissions (Read, Write, Delete) for each role.
+Real-time updates to roles and permissions using mock API integration.
+A role-permission matrix for quick and intuitive role management.
+4. API Simulation
+Mock API calls for CRUD operations on users and roles.
+Simulate server responses, including success and error handling, for testing functionality.
+5. Responsive Design
+The UI is fully responsive, ensuring compatibility with desktops, tablets, and mobile devices.
+The layout adapts to different screen sizes for an optimal user experience.
+Technology Stack
+Frontend: React, Tailwind CSS
+State Management: React useState
+Routing: React Router
+Mock API Integration: Simulated server responses
+Design: Tailwind CSS for styling
 
-In the project directory, you can run:
 
-### `npm start`
+# Setup Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Download the Project
+Download the project zip file from the provided link.
+Extract the contents of the zip file to a folder on your local system.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Navigate to the Project Directory Open a terminal and navigate to the folder where you extracted the project files:
 
-### `npm test`
+cd /path-to-extracted-folder
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Install Dependencies Ensure you have Node.js and npm installed. Then, run the following command to install all required dependencies:
 
-### `npm run build`
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Run the Development Server Start the application locally using the following command:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm start
+The application will be available at http://localhost:3000 in your web browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Usage Instructions
+** Access the Dashboard: Navigate to the homepage to view the admin dashboard.
+** Manage Users: Use the "User Management" section to add, edit, or delete users and assign them roles.
+** Manage Roles: Use the "Role Management" section to define roles, assign permissions using checkboxes, and manage existing roles.
+** Test Functionality: Interact with mock APIs to simulate CRUD operations and validate role-based workflows.
 
-### `npm run eject`
+# Folder Structure
+rbac-ui/
+├── src/
+│   ├── components/     # Reusable UI components (e.g., RoleCard, UserCard)
+│   ├── data/           # Mock data for users, roles, and permissions
+│   ├── pages/          # Main application pages (e.g., UserManagement, RoleManagement)
+│   ├── App.js          # Entry point for the React application
+│   ├── index.js        # Application bootstrap and rendering
+│   └── styles/         # Custom Tailwind CSS configurations
+├── public/             # Public assets (e.g., index.html)
+├── package.json        # Dependencies and scripts
+└── README.md 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Features Demonstration
+** Adding Users: Create a new user and assign roles directly from the dashboard.
+** Editing Roles: Update permissions for roles in real time with a clear, checkbox-based interface.
+** Deleting Data: Securely delete users or roles with confirmation modals to prevent accidental deletions.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation Commands
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npx create-react-app rbac-dashboard
+cd rbac-dashboard
+npm install react-router-dom
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+npm install zustand
+npm install axios
+npm install msw --save-dev
+npm install eslint prettier eslint-plugin-react eslint-config-prettier eslint-plugin-prettier --save-dev
+npm install react-icons
+npm install formik yup
+npm install @tanstack/react-table
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
